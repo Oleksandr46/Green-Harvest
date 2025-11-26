@@ -56,3 +56,26 @@
     line-height: 1.25;
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    margin: 0 auto;
+    width: 100%;
+    background-image: url(../img/hero.img/Imagedes.jpg);
+    background-position: calc(50% + 320px) top;
+  }
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../img/hero.img/Imagedes@2x.jpg);
+    }
+  }
+  .hero-container {
+    gap: 128px;
+    padding: 232px 0px 52px 0px;
+  }
+  .hero-title {
+    max-width: 502px;
+  }
+  .hero-text {
+  }
+}
