@@ -1,0 +1,124 @@
+.how-it-works {
+}
+.how-it-works-comtainer {
+  display: flex;
+}
+.container {
+}
+.works-left-side {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #7a3145;
+}
+.works-img {
+  border-radius: 30px;
+  max-width: 335px;
+  max-height: 452px;
+}
+.works-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 80px 20px;
+  background: #576f35;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 335px;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.works-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+.wrapper-title {
+  color: #d4bfc4;
+}
+.works-desc {
+  line-height: 1.43;
+  color: #fbfbfb;
+}
+.works-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 335px;
+  gap: 20px;
+}
+.works-item {
+  position: relative;
+  counter-increment: item;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 12px 24px 12px 100px;
+  /* width: 100%; */
+  min-height: 84px;
+
+  background: #fbfbfb;
+}
+.works-text {
+  line-height: 1.43;
+  color: #858585;
+}
+.text-accent {
+  font-weight: 700;
+  color: #141414;
+}
+.works-item::before {
+  position: absolute;
+  content: counter(item) '';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  border-radius: 100%;
+  background-color: #7a3145;
+  border: 5px solid#d4bfc4;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  width: 52px;
+  height: 52px;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+  .works-left-side {
+    padding: 100px 64px;
+  }
+  .works-img {
+    max-width: 640px;
+    max-height: 640px;
+  }
+  .works-right-side {
+    padding: 100px 164px;
+  }
+  .sidebar {
+    max-width: 440px;
+
+    gap: 24px;
+    padding-bottom: 52px;
+  }
+  .works-list {
+    max-width: 440px;
+
+    gap: 24px;
+  }
+  .works-item {
+    padding: 12px 17px 12px 100px;
+    min-height: 76px;
+  }
+}
