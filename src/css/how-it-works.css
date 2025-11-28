@@ -112,6 +112,13 @@
     gap: 24px;
     padding-bottom: 52px;
   }
+  .works-title {
+    font-size: 32px;
+  }
+  .works-desc {
+    font-size: 16px;
+    line-height: 1.25;
+  }
   .works-list {
     max-width: 440px;
 
@@ -120,5 +127,31 @@
   .works-item {
     padding: 12px 17px 12px 100px;
     min-height: 76px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .how-it-works {
+    display: flex;
+  }
+  .works-left-side {
+    width: 50%;
+    justify-content: right;
+    padding-right: 100px;
+  }
+  .img-block {
+    display: block;
+    margin: auto 0px;
+  }
+  .works-img {
+    max-width: 440px;
+    max-height: 560px;
+  }
+  .works-right-side {
+    display: block;
+    width: 50%;
+    padding: 100px;
+  }
+  .sidebar {
+    padding-bottom: 104px;
   }
 }
