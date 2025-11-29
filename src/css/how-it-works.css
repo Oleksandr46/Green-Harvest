@@ -1,10 +1,7 @@
-.how-it-works {
-}
 .how-it-works-comtainer {
   display: flex;
 }
-.container {
-}
+
 .works-left-side {
   display: flex;
   justify-content: center;
