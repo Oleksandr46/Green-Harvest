@@ -1,0 +1,52 @@
+.advertisement {
+}
+.advertisement-container {
+}
+.container {
+}
+
+.advertisement-text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+  width: 100%;
+}
+.discount {
+  display: flex;
+  width: fit-content;
+  border: 1px solid #000;
+  border-radius: 12px;
+  /* max-width: 335px;
+  min-height: 102px; */
+  background: #576f35;
+  color: #fbfbfb;
+}
+@media only screen and (min-width: 768px) {
+  .advertisement-text {
+    font-size: 64px;
+    line-height: 1;
+  }
+  .discount {
+    align-items: flex-end;
+    border: none;
+    width: 675px;
+    height: 86px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .advertisement-text {
+    font-size: 76px;
+    letter-spacing: -1.14px;
+    max-width: 1080px;
+  }
+  .discount {
+    align-items: center;
+    justify-content: flex-end;
+    width: 808px;
+    height: 84px;
+    margin-left: -16px;
+  }
+}
