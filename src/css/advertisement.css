@@ -15,12 +15,11 @@
   width: 100%;
 }
 .discount {
-  display: flex;
+  display: inline-block;
   width: fit-content;
   border: 1px solid #000;
   border-radius: 12px;
-  /* max-width: 335px;
-  min-height: 102px; */
+
   background: #576f35;
   color: #fbfbfb;
 }
@@ -30,22 +29,21 @@
     line-height: 1;
   }
   .discount {
-    align-items: flex-end;
+    padding-top: 20px;
     border: none;
-    width: 675px;
+    /* width: 675px; */
     height: 86px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .advertisement-text {
     font-size: 76px;
-    letter-spacing: -1.14px;
-    max-width: 1080px;
+    width: 1054px;
   }
   .discount {
     align-items: center;
-    justify-content: flex-end;
-    width: 808px;
+    padding-left: 16px;
+    padding-top: 4px;
     height: 84px;
     margin-left: -16px;
   }
