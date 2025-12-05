@@ -1,0 +1,133 @@
+.your-order {
+  background: #576f35;
+}
+.container {
+}
+.order-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.order-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+.order-text {
+  line-height: 1.43;
+  color: #fbfbfb;
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.order-block {
+  background: #fbfbfb;
+  border-radius: 30px;
+  padding: 40px 20px;
+  width: 335px;
+  height: 552px;
+}
+.order-block-text {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+.accent-form-us {
+  color: #7a3145;
+}
+.accent-form {
+  color: #576f35;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.order-form-field {
+  position: relative;
+}
+.order-form-label {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  line-height: 1.43;
+  text-align: center;
+}
+
+.order-form-wrapper {
+}
+.order-form-input {
+  border: 1px solid #858585;
+  border-radius: 30px;
+  padding: 14px 16px;
+  width: 100%;
+  min-height: 48px;
+}
+.order-form-message {
+  border: 1px solid #858585;
+  border-radius: 15px;
+  padding: 14px 16px;
+  width: 100%;
+  min-height: 92px;
+}
+
+.order-button {
+  border-radius: 30px;
+  border: none;
+  padding: 16px 129px;
+  width: 100%;
+  min-height: 52px;
+  background: #7a3145;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+
+.order-networks {
+  background: #7a3145;
+  border-radius: 30px;
+  padding: 40px 20px;
+  width: 335px;
+  height: 456px;
+}
+.networcks-img {
+  border-radius: 15px;
+  max-width: 295px;
+  min-height: 272px;
+  margin-bottom: 20px;
+}
+.networcks-text {
+  font-weight: 700;
+  line-height: 1.43;
+  color: #d4bfc4;
+  padding-bottom: 16px;
+}
+.socials-networcks {
+}
+.socials {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
