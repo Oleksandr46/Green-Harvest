@@ -30,8 +30,8 @@
   background: #fbfbfb;
   border-radius: 30px;
   padding: 40px 20px;
-  width: 335px;
-  height: 552px;
+  max-width: 335px;
+  min-height: 552px;
 }
 .order-block-text {
   font-weight: 600;
@@ -62,28 +62,61 @@
   position: relative;
 }
 .order-form-label {
-  position: absolute;
-  left: 16px;
-  top: 14px;
-  line-height: 1.43;
-  text-align: center;
 }
 
-.order-form-wrapper {
-}
-.order-form-input {
+.form-input {
   border: 1px solid #858585;
   border-radius: 30px;
   padding: 14px 16px;
   width: 100%;
   min-height: 48px;
 }
-.order-form-message {
+.pwm-field-icon {
+  display: none;
+}
+.form-input:focus,
+.form-input:hover,
+.form-input:active,
+.form-textarea:focus {
+  border-color: #7a3145;
+}
+.form-input:not(:placeholder-shown):valid,
+.form-textarea:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
+}
+.form-input:not(:placeholder-shown):invalid,
+.form-textarea:not(:placeholder-shown):invalid {
+  border-color: #e74a3b;
+}
+.text-valid,
+.text-invalid {
+  position: absolute;
+  padding-left: 20px;
+  top: 95%;
+  display: none;
+}
+.form-input:not(:placeholder-shown):valid ~ .text-valid,
+.form-textarea:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+  color: #3cbc81;
+}
+.form-input:not(:placeholder-shown):invalid ~ .text-invalid,
+.form-textarea:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+  color: #e74a3b;
+}
+
+.form-textarea {
   border: 1px solid #858585;
   border-radius: 15px;
   padding: 14px 16px;
   width: 100%;
   min-height: 92px;
+}
+.form-input::placeholder,
+.form-textarea::placeholder {
+  line-height: 1.43;
+  color: #141414;
 }
 
 .order-button {
@@ -106,8 +139,8 @@
   background: #7a3145;
   border-radius: 30px;
   padding: 40px 20px;
-  width: 335px;
-  height: 456px;
+  max-width: 335px;
+  min-height: 456px;
 }
 .networcks-img {
   border-radius: 15px;
@@ -123,11 +156,116 @@
 }
 .socials-networcks {
 }
-.socials {
+.networcks-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.networcks-links {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+}
+.networcks-item:not(:last-child)::after {
+  content: '/';
+  margin-left: 8px;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-wrapper {
+    max-width: 640px;
+    min-height: 276px;
+    gap: 24px;
+    padding-bottom: 52px;
+  }
+  .order-title {
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .order-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .order {
+    gap: 32px;
+  }
+  .order-block {
+    padding: 72px 100px;
+    max-width: 640px;
+    min-height: 632px;
+  }
+  .order-block-text {
+    font-size: 32px;
+    padding-bottom: 52px;
+  }
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    line-height: 1.25;
+  }
+  .inputs {
+    padding-bottom: 24px;
+  }
+
+  .order-networks {
+    padding: 52px;
+    max-width: 640px;
+    min-height: 528px;
+  }
+  .networcks-img {
+    max-width: 536px;
+    min-height: 316px;
+    margin-bottom: 52px;
+  }
+  .networcks-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .socials-networcks {
+  }
+  .networcks-list {
+    gap: 12px;
+  }
+
+  .networcks-item:not(:last-child)::after {
+    margin-left: 12px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .order-wrapper {
+    max-width: 751px;
+    min-height: 192px;
+  }
+  .order {
+    flex-direction: row;
+  }
+  .order-block {
+    padding: 52px 48px;
+    max-width: 524px;
+    min-height: 592px;
+  }
+  .order-block-text {
+    max-width: 428px;
+  }
+
+  .order-networks {
+    padding: 52px 48px;
+    max-width: 524px;
+    min-height: 592px;
+  }
+  .networcks-img {
+    max-width: 428px;
+    min-height: 352px;
+    margin-bottom: 80px;
+  }
 }

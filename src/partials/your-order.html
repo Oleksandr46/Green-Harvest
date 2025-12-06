@@ -17,63 +17,126 @@
           easy! Fill out <spam class="accent-form">the form</spam> below and we
           will contact you !
         </p>
-        <form class="order-form" name="review">
+        <form class="order-form" name="order" id="order" autocomplete="off">
           <div class="order-form-field">
-            <label class="order-form-label" for="full-name">Full Name</label>
-            <div class="order-form-wrapper">
-              <input
-                class="order-form-input"
-                type="text"
-                id="full-name"
-                name="full-name"
-                minlength="5"
-                required
-                title="Please switch to english"
-              />
-            </div>
+            <label class="order-form-label" for="full-name"></label>
+            <input
+              class="form-input"
+              type="text"
+              id="full-name"
+              name="full-name"
+              minlength="5"
+              placeholder="Full Name"
+              pattern="([A-Za-z]{3,})\s([A-Za-z]{3,})"
+              required
+              title="Please switch to english"
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid Full Name, try again</p>
           </div>
           <div class="order-form-field">
-            <label class="order-form-label" for="user-email">Email</label>
-            <div class="order-form-wrapper">
-              <input
-                class="order-form-input"
-                type="email"
-                id="user-email"
-                name="user-email"
-                required
-                title="Please switch to english"
-              />
-            </div>
+            <label class="order-form-label" for="user-email"></label>
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+              title="Please switch to english"
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid Full email, try again</p>
           </div>
           <div class="order-form-field">
-            <label class="order-form-label" for="user-message">Comment</label>
+            <label class="order-form-label" for="user-message"></label>
             <textarea
-              class="order-form-message"
+              class="form-textarea"
               name="user-message"
               id="user-message"
-              minlength="20"
+              placeholder="Comment"
+              minlength="5"
               maxlength="250"
             ></textarea>
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid Full message, try again</p>
           </div>
 
           <button class="order-button" type="submit">Send</button>
         </form>
       </div>
       <div class="order-networks">
-        <img
-          class="networcks-img"
-          srcset="
-            img/your-order/rectangle_mob.jpg    1x,
-            img/your-order/rectangle_mob@2x.jpg 2x
-          "
-          src="img/your-order/rectangle_mob.jpg"
-          alt="woman make breackfast"
-          width="295"
-          height="272"
-        />
+        <picture class="order-pecture">
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              img/your-order/pic_page.jpg    1x,
+              img/your-order/pic_page@2x.jpg 2x
+            "
+          />
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              img/your-order/pic_tab.jpg    1x,
+              img/your-order/pic_tab@2x.jpg 2x
+            "
+          />
+
+          <!-- Mobile -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              img/your-order/rectangle_mob.jpg    1x,
+              img/your-order/rectangle_mob@2x.jpg 2x
+            "
+          />
+
+          <img
+            class="networcks-img"
+            src="img/your-order/rectangle_mob.jpg"
+            alt="healty food"
+            width="295"
+            height="272"
+          />
+        </picture>
         <p class="networcks-text">Follow us on our social networks:</p>
         <div class="socials-networcks">
-          <p class="socials">instagram / facebook / youtube</p>
+          <ul class="networcks-list">
+            <li class="networcks-item">
+              <a
+                class="networcks-links"
+                target="_blank"
+                href="https://www.instagram.com/"
+                rel="noopener noreferrer"
+                aria-label="link to instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="networcks-item">
+              <a
+                class="networcks-links"
+                target="_blank"
+                href="https://www.facebook.com/"
+                rel="noopener noreferrer"
+                aria-label="link to facebook"
+                >Facebook</a
+              >
+            </li>
+            <li class="networcks-item">
+              <a
+                class="networcks-links"
+                target="_blank"
+                href="https://www.youtube.com/"
+                rel="noopener noreferrer"
+                aria-label="link to youtube"
+                >Youtube</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </div>
